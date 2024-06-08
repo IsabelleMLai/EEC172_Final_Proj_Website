@@ -26,9 +26,9 @@
 <div class="abstract">
 <div class="abstract-title"><h2>Description</h2></div>
 
-The project we have attempted to create is a smart temperature 
-and humidity monitor that displays readings in a variety of ways and alerts 
-the user when temperatures are dangerously high or low. Our project uses a temperature 
+Our final project attempts to implement data from a temperature and humidity sensor to 
+create a "smart" monitoring system that has the ability to display data in unique ways and 
+alert users when data readings are in an unsafe range of values. Our project uses a temperature 
 and humidity sensor to take readings, and displays a graph of the most recent 
 readings on a Fahrenheit or Celsius scale on an OLED display that the user can 
 control using a remote controller. The data will also be sent to Amazon Web 
@@ -36,11 +36,30 @@ Service to save all data. Our monitor will be able to determine when temperature
 are dangerously high or low, and alert the user by sending an email to their 
 personal email address. <br/><br/> Our source code can be
 found <!-- replace this link -->
-<a href="https://github.com/ucd-eec172/project-website-example"> here
-(placeholder)</a>.<br />
-<div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;padding-top:20px"> <div style="display: inline-block; vertical-align: bottom;"> <img src="./media/Image_001.jpg" style="width:auto;height:2in"/> <!-- <span class="caption"> </span> --> </div> <div style="display: inline-block; vertical-align: bottom;"> <img src="./media/Image_002.jpg" style="width:auto;height:2in" /> <!-- <span class="caption"> </span> --> </div> </div>
-<h2>Video Demo</h2> <div style="text-align:center;margin:auto;max-width:560px"> <div style="padding-bottom:56.25%;position:relative;height:0;"> <iframe style="left:0;top:0;width:100%;height:100%;position:absolute;" width="560" height="315" src="https://www.youtube.com/embed/wSRtnAEZhmc?si=3vQXNj4h0WkW-F-q" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div> </div> 
-</div>
+<a href="https://github.com/IsabelleMLai/EEC172_Final_Proj.git"> here. </a> View the most recent folder "final_proj_oled_base" for our final version of our code.<br />
+
+
+<h2>Video Demo</h2> 
+<p>
+  This demo video displays a slightly outdated version of our project. Here, our OLED display 
+  and are UART terminal interface are working, but our most updated version of code
+  also includes a display of the graphed temperature readings in the UART terminal, further 
+  user interface debugging, and updated graphics on the OLED so that the initial graph does not
+  contain "0" points.
+</p>
+
+<p>
+  Our most updated code on 
+  <a href="https://github.com/IsabelleMLai/EEC172_Final_Proj.git"> github</a> displays the updated changes. <br /> 
+</p>
+
+
+<div style="text-align:center;margin:auto;max-width:560px"> 
+  
+  <div style="padding-bottom:56.25%;position:relative;height:0;"> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/chnbbsFClFY?si=xMZOS-oUaZ2MqKZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
 </header>
 <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Table of Contents</h2>
@@ -99,75 +118,55 @@ BOM</a></li>
 <!-- ALL CONTENT THAT FOLLWOWS WILL APPEAR IN AND AFTER THE TABLE OF CONTENTS -->
 
 <h1 id="market-survey">Market Survey</h1>
-<p>There are two types of similar product on the market. The first one
-is products from AeroGarden. Their products allow users to grow plants
-in nutrient solutions in a limited amount of usually 5 to 10. Compared
-with this product, our product provides an automated system for nutrient
-control that ensures the plant always has the correct amount of
-nutrients needed to avoid excess or insufficient nutrients. The other
-product is an expensive commercial system for horticulture aiming for a
-large scale of growth. Compared with this one, our product has the
-advantage of being cheap and small-scale which is more suitable for
-individual hobbyists to explore hydroponics.</p>
+<p> A similar product currently on the market is this 
+  <a href="https://www.amazon.com/WiFi-Humidity-Temperature-Monitor-Thermometer/dp/B0B5GVL1S8/ref=sr_1_6?dib=eyJ2IjoiMSJ9.mJLHacYHDpdN4JO6czXzCAdjInN16fkl_gvE8D6tiRosuDibqYbrMu1G6X7Goi_UAUXAAGKfOCJlIkYpzguzt7fVnwhOv8Imu7zYGh_N1osyoq1cREq7mIzRuiRdFS7b0yoQEPMTYkIajMECwy0mg9xCuRmrVVHUAE2jhKWPwwGlendwCi5UD1FI5w5rkhBKfoFnlw-b3gitgypQ9tWZZRFm5k2uOh0Aa_ChN18MiBAc_5VoJrI7hwkU2QHLGCWtGMAUIuBq5Zg2cBRuW4tuUmJBHuvZLAbl8PwzTuJhvhA.f-R3TCkoFKXp2rue10qNF4PdnwFboYibUnqEenMA21s&dib_tag=se&keywords=smart+temperature+sensor&qid=1717817321&sr=8-6"> WiFi Humidity Temperature Monitor</a> on Amazon. <br /> 
+  This product offers a monitoring system that can be attached to a magnetic surface and utilizes a smartphone app as its interface. 
+  Our product competes with this item on the market as it features a lower cost and offers user interfaces on multiple different platforms. 
+  Our product aims to allow the user to view temperatures on an OLED close to the sensor, in  addition to a history  of temperature readings
+   on AWS. 
+</p>
 <div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;">
   <div style='display: inline-block; vertical-align: top;'>
-    <img src="./media/Image_003.jpg" style="width:auto;height:200"/>
+    <img src="./media/Image_003.jpg" style="width:300px;height:auto"/>
     <span class="caption">
-      <a href="https://aerogarden.com/gardens/harvest-family/Harvest-2.0.html">AeroGarden Harvest 2.0</a>
+      <a href="https://www.amazon.com/WiFi-Humidity-Temperature-Monitor-Thermometer/dp/B0B5GVL1S8/ref=sr_1_6?dib=eyJ2IjoiMSJ9.mJLHacYHDpdN4JO6czXzCAdjInN16fkl_gvE8D6tiRosuDibqYbrMu1G6X7Goi_UAUXAAGKfOCJlIkYpzguzt7fVnwhOv8Imu7zYGh_N1osyoq1cREq7mIzRuiRdFS7b0yoQEPMTYkIajMECwy0mg9xCuRmrVVHUAE2jhKWPwwGlendwCi5UD1FI5w5rkhBKfoFnlw-b3gitgypQ9tWZZRFm5k2uOh0Aa_ChN18MiBAc_5VoJrI7hwkU2QHLGCWtGMAUIuBq5Zg2cBRuW4tuUmJBHuvZLAbl8PwzTuJhvhA.f-R3TCkoFKXp2rue10qNF4PdnwFboYibUnqEenMA21s&dib_tag=se&keywords=smart+temperature+sensor&qid=1717817321&sr=8-6">WiFi Humidity Temperature Monitor</a> 
       <ul style="text-align:left;">
-      <li>Inexpensive ($90)</li>
-      <li>Not Automated</li>
-      <li>Small Scale</li>
-      <li>No remote monitoring</li>
+      <li>Competitive pricing, but higher cost ($14.86)</li>
+      <li>Single user interface on smartphone app</li>
     </ul>
     </span>
   </div>
-  <div style='display: inline-block; vertical-align: top;'>
-    <img src="./media/Image_004.jpg" style="width:auto;height:200" />
-    <span class="caption">
-      <a href="https://www.hydroexperts.com.au/Autogrow-MultiGrow-Controller-All-In-One-Controller-8-Growing-Zones">Autogrow Multigrow</a>
-      <ul style="text-align:left;">
-      <li>Expensive ($4500)</li>
-      <li>Fully Automated</li>
-      <li>Huge Scale</li>
-      <li>Cloud monitoring</li>
-    </ul>
-    </span>
-  </div>
+  
 </div>
 
 <h1 id="design">Design</h1>
 <h2 id="system-architecture">System Architecture</h2>
 <div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;">
   <div style="display:inline-block;vertical-align:top;flex:1 0 400px;">
-    As shown in the system flowchart, we use one of the CC3200 boards for
-    the closed feedback loop for maintaining concentration in the
-    environment. The board will read values with I2C protocol through an ADC
-    which reads values from the thermistor and the TDS meter sensor. The
-    board will also periodically read user-defined thresholds from the AWS
-    cloud using RESTful APIs. When the sensory values read outside of the
-    user-defined thresholds, the board will activate the motor control
-    function to pump either water or nutrient solution to bring the
-    concentration back within the thresholds. Meanwhile, another CC3200
-    board is frequently reading from the AWS cloud to present the current
-    TDS reading and user-defined threshold to the user on an OLED through
-    SPI protocols. To adjust the thresholds, the user can either do it
-    remotely or locally by using a TV remote to type the number into the IR
-    receiver. The adjustments will be updated to the AWS and if the user
-    updates remotely, the local CC3200 board will update the values in the
-    next synchronization.
+    The system for our project involves 4 main parts: communication 
+    with the OLED, interrupts  with the IR receiver and the controller, 
+    data being read from the temperature and humidity sensor, and communication
+     with AWS. Besides the temperature sensor, code for each of the parts of 
+     this project could be borrowed from previous labs and edited to interact
+      cohesively. The OLED was used in lab 2 [1], the IR receiver was used in 
+      lab 3 [2], and AWS was used in lab 4 [3]. The temperature and humidity 
+      sensor offers C++ projects available on the internet that are compatible 
+      with  Arduino that we could translate into C and edit to match the needs 
+      of our CC3200 board. Documentation for the sensor shows that it uses a 
+      unique communication signal to provide data.
   </div>
-  <div style="display:inline-block;vertical-align:top;flex:0 0 400px;">
+  <div style="display:inline-block;vertical-align:top;flex:0 0 500px">
     <div class="fig">
-      <img src="./media/Image_005.jpg" style="width:90%;height:auto;" />
-      <span class="caption">System Flowchart</span>
+      <img src="./media/Image_006.jpg" style="width:90%;height:auto;" />
+      <span class="caption">Block Diagram</span>
     </div>
   </div>
+
 </div>
 
 <h2 id="functional-specification">Functional Specification</h2>
 <div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;">
-  <div style="display:inline-block;vertical-align:top;flex:1 0 300px;">
+  <div style="display:inline-block;vertical-align:top;flex:1 0 400px;">
     Our system works based on the following state diagram. The device will
     periodically monitor the temperature and the electrical conductivity
     (EC) of the solution and convert the values into a TDS value using a
@@ -182,211 +181,178 @@ individual hobbyists to explore hydroponics.</p>
     activate the nutrient pump until the PPM is higher than the lower
     thresholds and go back to the rest state. In each state, the device will
     periodically post the TDS.
+
+    <p> 
+
+
+    </p>
+
   </div>
-  <div style="display:inline-block;vertical-align:top;flex:0 0 500px">
+
+  <div style="display:inline-block;vertical-align:top;flex:0 0 900px;">
     <div class="fig">
-      <img src="./media/Image_006.jpg" style="width:90%;height:auto;" />
-      <span class="caption">State Diagram</span>
+      <img src="./media/Image_005.jpg" style="width:500px;height:auto;" />
+      <span class="caption">System Flowchart State Diagram</span>
     </div>
   </div>
+
 </div>
 
 <h1 id="implementation">Implementation</h1>
-<h3 id="cc3200-launchxl-evaluation-board">CC3200-LAUNCHXL Evaluation
-Board</h3>
-<p>All control and logic was handled by two CC3200 microcontroller
-units, one each for the Master and Slave device. On the master device,
-it was responsible for decoding IR inputs from the remote to allow the
-user to input thresholds to be sent over AWS. The board’s SPI
-functionality, using the TI SPI library, was used to interface with the
-OLED display. The MCU is WiFi enabled, allowing a remote connection
-between the two boards.</p>
-<p>On the slave device, the microcontroller was responsible for the same
-functionalities as above, in addition to the TDS reading and control.
-This includes interfacing with the ADC over the I2C bus, reading
-thresholds over HTTP from the AWS device shadow, writing the reported
-TDS to the device shadow, and activating the two pumps using the BJT
-control circuit.</p>
-<h2 id="functional-blocks-master">Functional Blocks: Master</h2>
-<h3 id="aws-iot-core">AWS IoT Core</h3>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
-  <div style='display: inline-block; vertical-align: top;flex:1 0 200px'>
-    The AWS IoT core allows our devices to communicate with each other
-    asynchronously. The master device can update the desired thresholds, and
-    the slave device will read them and synchronize them to the reported
-    state. The slave device will also post the TDS and temperature readings
-    periodically.
-  </div>
-  <div style='display: inline-block; vertical-align: top;flex:0 0 400px'>
-    <div class="fig">
-      <img src="./media/Image_007.jpg" style="width:auto;height:2.5in" />
-      <span class="caption">Device Shadow JSON</span>
+<!--h3 id="cc3200-launchxl-evaluation-board">CC3200-LAUNCHXL Evaluation
+Board</h3-->
+<p>We began implementing our project by using our project from lab 2 [1] 
+  with the OLED as a base. We focus on controlling the OLED display's output 
+  in the 'MasterMain()' function by using the Adafruit package to create images
+   on the display. We implemented local functions to create displays for 
+   Fahrenheit and Celsius graphs that include a title, and axis lines that 
+   are located to include the most extreme temperatures recorded in history. 
+   We use the 'drawChar()' and 'drawLine()' functions from the Adafruit package
+    to display the title of each graph and the axis lines. We also created other
+     local functions to help us plot points on the graph and update our graph.</p>
+
+<p>
+  Functions we defined to help us draw our graph: 
+</p>
+     <div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;">
+      <div style='display: inline-block; vertical-align: top;'>
+        
+        <span class="caption">
+          <ul style="text-align:left;">
+          <li>void CreateTitle(char arr[], int arrsize) </li>
+          <li>void MakePoint(int pointval, int nthpoint,
+            char temp, int color)</li> 
+          <li> void DisplayData(char temptype, int arr[],
+            int addedv, int arrsize, int color)</li> 
+          <li>void UpdateData(int newtemp, int arr[], 
+            int arrsize) </li> 
+          <li>void ConvertFCorCF(char prevtemp, char temp, 
+            int arr[], int arrsize)</li> 
+          <li>void DisplayGraph(char temptype)</li> 
+          <li>void RedrawXAxis(char temp)</li> 
+          <li>void RedrawYAxis(char temp)</li> 
+          <li>int ConvertCharInt(char cStr[], int iStringLength) </li> 
+        </ul>
+        </span>
+      </div>
+      
     </div>
+    
+
+
+<p>The Fahrenheit graph has a range of temperatures from -126 to 136 degrees, 
+  and the corresponding Celsius temperatures range from -88 to 58 degrees. The 
+  two graphs have different x-axis locations relative to the y-axis to account 
+  for the relative location of 0 degrees within the given scale's temperature 
+  range, and we establish their absolute locations on the OLED screen as variables 
+  to help us graph each point. Since the temperature ranges are different sizes, 
+  we also define each pixel on the OLED to  represent different incremental values.
+   To graph each temperature value, we use the Adafruit function 'fillCircle()' to 
+   display a point on the graph, and use the pixel temperature increment value and 
+   x-axis location to define the location of the point.  </p>
+
+<p> 
+  We use an int array to store the past ten temperature values we receive, 
+  and use the function 'ConvertFCorCF()' to  convert all of the values in the 
+  array between Celsuis and Fahrenheit. When a new temperature reading is available, 
+  we use our function 'UpdateData()' to add the new temperature to the end of the array. 
+  Our function 'DisplayData()' draws all of the data points in the array with a line 
+  connecting each point. The x-axis of the graph represents time, so as a new temperature 
+  is received, it is graphed at the right side of the graph, and all of the previous values
+   are shifted to the left. Each time the data points are graphed, the x-axis is redrawn 
+   for visual clarity, and the previous data points are drawn white to clear the graph quickly. 
+   When more than 10 values have been graphed, the y-axis is redrawn for visual clarity. 
+</p>
+
+<p>
+  We attempted to incorporate our code from lab 3 [2] into our project to be able 
+  to use the controller to control the OLED display, but we ran into issues getting 
+  the GPIO interrupt to work correctly, although we were able to incorporate the Systick 
+  module into our project. We added code to define actions given a certain button press 
+  on the controller, such as defining integer values for each of the numbered buttons on 
+  the controller, but we were unable to test and implement the code into our project. 
+</p>
+
+<p>Functions we defined to determine button presses:</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;">
+  <div style='display: inline-block; vertical-align: top;'>
+    
+    <span class="caption">
+      <ul style="text-align:left;">
+      <li>static int ButtonPressed(int bdata) </li>
+      <li>void ConvertArrToFullNum(int arr[], int asize)</li> 
+      <li> void button-flag-raised(volatile unsigned 
+        char* SW2intflag, uint64t deltaus)</li> 
+      </ul>
+    </span>
   </div>
+  
 </div>
 
-<h3 id="oled-display">OLED Display</h3>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
-  <div style='display: inline-block; vertical-align: top;flex:1 0 400px'>
-    On both Master and Slave devices, the user can view the current TDS and
-    temperature of the plant solution on an OLED display. The user can also
-    use the display to view and edit the TDS thresholds. The CC3200 uses the
-    SPI bus to communicate with the display module.
+<p>
+  We were also unable to get the temperature sensor's code to run, 
+  so in place of these two challenges, we implemented a UART interface for the 
+  OLED display. We used the 'uart-demo' project code to help us take in user inputs
+   from the terminal and placed the bulk of the code in a while loop in our 
+   project's 'MasterMain()' function. We designed our interface to alternate between 
+   asking the user for a temperature scale, Celsius or Fahrenheit, and asking the user 
+   for a temperature value in given bounds for the scale. When the user types in an 
+   invalid value, the same prompt is asked again. To make the UART interface compatible 
+   with our project, we convert the user input from a character array to and int array. 
+   After each prompt, the OLED updates to display each new piece of information. The title 
+   and axes are displayed after the temperature scale is inputted, and a plot of the past 
+   ten readings including the newest data value is graphed when the user enters a value. 
+   After the user enters a valid data point, the past ten readings are displayed in the most 
+   recent temperature scale form on the UART terminal. 
+</p>
+
+<p>
+  We did not successfully incorporate AWS into our project. 
+</p>
+
+<p>
+  Our hardware for this project consisted of the OLED pin configuration and the 
+  IR receiver circuit combined. A schematic is shown in the photo below:
+</p>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;">
+  <div style='display: inline-block; vertical-align: top;'>
+    <img src="./media/Image_007.jpg" style="width:700px;height:auto"/>
+    
   </div>
-  <div style='display: inline-block; vertical-align: top;flex:0 0 400px'>
-    <div class="fig">
-      <img src="./media/Image_008.jpg" style="width:auto;height:2in" />
-      <span class="caption">OLED Wiring Diagram</span>
-    </div>
-  </div>
+  
 </div>
 
-<h3 id="ir-receiver">IR Receiver</h3>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
-  <div style='display: inline-block; vertical-align: top;flex:1 0 400px'>
-    On both the Master and Slave devices, a user can input the TDS
-    thresholds using a TV remote. These TV remotes use the NEC code format
-    with a carrier frequency of 38KHz. The Vishay IR receiver is connected
-    to Pin 62 of the CC3200, which is configured as a GPIO input pin. Each
-    positive edge of the signal triggers an interrupt in the main program,
-    storing the pulse distances into a buffer, and allowing us to decode the
-    inputs (1-9, delete and enter). The IR receiver is connected to VCC
-    through a resistor and a capacitor to filter any ripples.
-  </div>
-  <div style='display: inline-block; vertical-align: top;flex:0 0 400px'>
-    <div class="fig">
-      <img src="./media/Image_009.jpg" style="width:auto;height:2in" />
-      <span class="caption">IR Receiver Wiring Diagram</span>
-    </div>
-  </div>
-</div>
 
-<h2 id="functional-blocks-slave">Functional Blocks: Slave</h2>
-<p>The slave device contains all the functional blocks from the master
-device, plus the following:</p>
-<h3 id="analog-to-digital-converter-adc-board">Analog-To-Digital
-Converter (ADC) Board</h3>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
-  <div style='display: inline-block; vertical-align: top;flex:1 0 400px'>
-    The outputs from the thermistor and TDS sensor board are
-    in the form of analog voltages, which need to be converted to digital
-    values to be usable in our program. We chose the AD1015 breakout board
-    from Adafruit, which sports 4-channels and 12 bits of precision. We
-    ended up using only 2 channels, so there is a potential for even more
-    cost savings. The ADC board supports I2C communication, which we can use
-    to request and read the two channel voltages. 
-    The <a href="https://cdn-shop.adafruit.com/datasheets/ads1015.pdf">
-    product datasheet</a> contains the necessary configuration values
-    and register addresses for operation.
-  </div>
-  <div style='display: inline-block; vertical-align: top;flex:1 0 400px'>
-    <div class="fig">
-      <img src="./media/Image_010.jpg" style="width:auto;height:2in" />
-      <span class="caption">ADC Wiring Diagram</span>
-    </div>
-  </div>
-</div>
-
-<h3 id="thermistor">Thermistor</h3>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
-  <div style='display: inline-block; vertical-align: top;flex:1 0 300px;'>
-    Conductivity-based TDS measurements are sensitive to temperature. To
-    allow accurate TDS measurements in a variety of climates and seasons,
-    temperature compensation calculations must be performed. To measure the
-    temperature, we use an NTC thermistor connected in a voltage divider
-    with a 10k resistor. The voltage across the resistor is read by the ADC
-    and converted to temperature using the equation provided by the
-    thermistor datasheet.
-  </div>
-  <div style='display: inline-block; vertical-align: top;flex:1 0 400px'>
-    <div class="fig">
-      <img src="./media/Image_011.jpg" style="width:auto;height:2in" />
-      <span class="caption">Thermistor Circuit Diagram</span>
-    </div>
-  </div>
-</div>
-
-<h3 id="tds-sensor-board">TDS Sensor Board</h3>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
-  <div style='display: inline-block; vertical-align: top;flex:1 0 500px'>
-    In our first attempt to measure TDS, we used a simple two-probe analog
-    setup with a voltage divider. We soon found out that this was a naïve
-    approach (see Challenges). Consequently, we acquired a specialty TDS
-    sensing board from CQRobot, which generates a sinusoidal pulse and
-    measures the voltage drop to give a highly precise voltage to the ADC.
-    The MCU can then convert this voltage to a TDS value using the equation
-    provided by the device datasheet. We calibrated the TDS readings using a
-    standalone TDS sensor pen. After calibration and setting up the curves
-    for temperature compensation, we were able to achieve TDS readings
-    accurate to within 5% of the TDS sensor pen.
-  </div>
-  <div style='display: inline-block; vertical-align: top;flex:1 0 600px'>
-    <div class="fig">
-      <img src="./media/Image_012.jpg" style="width:auto;height:2in;padding-top:30px" />
-      <span class="caption">TDS Sensor Wiring Diagram</span>
-    </div>
-  </div>
-</div>
-
-<h3 id="pumps-and-control-circuit">Pumps and Control Circuit</h3>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
-  <div style='display: inline-block; vertical-align: top;flex:1 0 500px'>
-    The CC3200 is unable to provide sufficient power to drive the pumps,
-    which need 100mA of current each. Therefore, we used an external power
-    source in the form of 2 AA batteries for each pump motor. To allow the
-    CC3200 to turn on/off the motors, we designed a simple amplifier using a
-    Common Emitter topology. When the control pin is asserted HIGH, the BJT
-    will allow current to flow from 3V to ground through the pump motor.
-    Conversely, if the control signal is LOW, the BJT will not allow current
-    to flow in the motor. For each motor, there is a reverse-biased diode
-    connected across it. This protects our circuit from current generated by
-    the motor if it is spun from external force or inertia.
-  </div>
-  <div style='display: inline-block; vertical-align: top;flex:1 0 600px'>
-    <div class="fig">
-      <img src="./media/Image_013.jpg" style="width:auto;height:2in;padding-top:30px" />
-      <span class="caption">Pump Circuit Diagrams</span>
-    </div>
-  </div>
-</div>
 
 <h1 id="challenges">Challenges</h1>
-<p>The most significant challenge we faced while developing this
-prototype was of inaccurate and inconsistent Electrical Conductivity
-(EC) measurements. This occurred due to two reasons: probe channel
-polarization and current limitations of GPIO pins.</p>
-<h2 id="probe-channel-polarization">Probe Channel Polarization</h2>
-<p>Our first design for the probe was simply two copper rods, which
-would add as electrodes. This probe would be connected in series with a
-1000-ohm resistor to act as a voltage divider. We would simply connect
-the probe to VCC and measure the voltage divider through the ADC,
-allowing us to calculate the EC. However, when we used the probe for a
-few minutes, we realized that the EC value would continue to rise. This
-is because the DC current causes an ionized channel to build up between
-the two electrodes in the water. This cause inconsistent EC readings as
-time goes on.</p>
-<h2 id="current-limitation-of-gpio-pins">Current Limitation of GPIO
-Pins</h2>
-<p>Our next idea was to try using the GPIO pins to power the probe,
-since we can turn it off when not needed, preventing excessive
-polarization. However, the GPIO pins are current limited, and any
-control circuit with a transistor would introduce extra voltage drops.
-Therefore, the simple two-probe implementation was not feasible.</p>
-<h2 id="solution-to-challenges">Solution to Challenges</h2>
-<p>We realized that using DC current to measure EC was not feasible.
-Therefore, we purchased a standalone EC measurement board from CQRobot.
-This inexpensive solution ($8) used a low-voltage, low-current AC signal
-to prevent polarization. The board would convert the AC voltage drop
-across the solution to a DC analog voltage, which would then be read by
-our ADC. After calibrating the setup using a commercial TDS pen, the
-results were accurate within 3%, and would not drift by more than 0.5%
-over time.</p>
+<p> 
+  We faced challenges in getting our previous projects to run correctly, 
+  which made it hard for us to utilize that code for our final project. 
+  Specifically in implementing the IR receiver into our OLED project, we faced 
+  issues with getting the GPIO interrupt to work correctly. We tried running our
+  project on different micro controllers, and changing the pin taking in the IR 
+  receiver's signal, but we were unable to resolve the issue. We used the Saleae 
+  logic analyzer and found that the IR receiver circuitry was working, but that our
+   micro controller was unable to pick up the signal and never raised an interrupt 
+   in our main function. We chose to use the UART as our user interface since we were 
+   unable to get the controller or the sensor to run. 
+</p>
+
+<p> We also faced challenges including AWS into our project due to a time constraint. 
+  We could have focused more time on incorporating AWS into our project over attempting
+   to debug the IR receiver. </p>
+
+
 <h1 id="future-work">Future Work</h1>
-<p>Given more time, we had the idea of developing a web app to allow
-users to control the device from their cell phone. Another idea we
-wanted to implement in the future is adding a grow light and pH
-controller to maintain a more suitable and stable environment for
-different plants to grow.</p>
+<p>In the future we would like to get the temperature sensor to work, and to 
+  successfully  implement the controller and IR receiver to allow control over 
+  the OLED display rather than relying on the UART interface for information. We 
+  would also like to have the data stored in AWS. The efficiency of our display 
+  is relatively good as the display graphs new data points quickly, but we could 
+  improve the  time it takes to change the graph when the temperature scale changes. 
+  We could do this by only redrawing the x-axis and changing the title. We would 
+  also like to incorporate humidity graphs and data into our project in the future. </p>
 <h1 id="finalized-bom">Finalized BOM</h1>
 <!-- you can convert google sheet cells to html for free using a converter
   like https://tabletomarkdown.com/convert-spreadsheet-to-html/ -->
@@ -409,7 +375,7 @@ different plants to grow.</p>
     <td><p>1</p></td>
     <td><p>CC3200-LAUNCHXL</p></td>
     <td><p>MCU Evaluation Board</p></td>
-    <td><p>2</p></td>
+    <td><p>1</p></td>
     <td><p>Provided by EEC172 Course</p></td>
     <td><p>$66.00</p></td>
     <td><p>$132.00</p></td>
@@ -419,7 +385,7 @@ different plants to grow.</p>
     <td><p>2</p></td>
     <td><p>Adafruit 1431 OLED</p></td>
     <td><p>128x128 RGB OLED Display. SPI protocol</p></td>
-    <td><p>2</p></td>
+    <td><p>1</p></td>
     <td><p>Provided by EEC172 Course</p></td>
     <td><p>$39.95</p></td>
     <td><p>$79.90</p></td>
@@ -427,96 +393,6 @@ different plants to grow.</p>
   </tr>
   <tr>
     <td><p>3</p></td>
-    <td><p>Adafruit 4547 3VDC Pump</p></td>
-    <td><p>Submersible pump. 3V 100mA DC</p></td>
-    <td><p>2</p></td>
-    <td><p>Adafruit</p></td>
-    <td><p>$2.95</p></td>
-    <td><p>$5.90</p></td>
-    <td><p>For dispensing water and nutrient solution</p></td>
-  </tr>
-  <tr>
-    <td><p>4</p></td>
-    <td><p>Adafruit 4545 6mm Tube</p></td>
-    <td><p>6mm Silicone Tube: 1 meter length</p></td>
-    <td><p>1</p></td>
-    <td><p>Adafruit</p></td>
-    <td><p>$1.50</p></td>
-    <td><p>$1.50</p></td>
-    <td><p>For dispensing water and nutrient solution</p></td>
-  </tr>
-  <tr>
-    <td><p>5</p></td>
-    <td><p>NTC Thermistor 10k</p></td>
-    <td><p>10k ohm nominal resistance, 100cm lead</p></td>
-    <td><p>1</p></td>
-    <td><p>(Already had one, available on Aliexpress)</p></td>
-    <td><p>$0.92</p></td>
-    <td><p>$0.92</p></td>
-    <td><p>For temperature compensation</p></td>
-  </tr>
-  <tr>
-    <td><p>6</p></td>
-    <td><p>Adafruit AD1015 12-bit ADC</p></td>
-    <td><p>12-bit resolution, 4 channels, I2C</p></td>
-    <td><p>1</p></td>
-    <td><p>Adafruit</p></td>
-    <td><p>$9.95</p></td>
-    <td><p>$9.95</p></td>
-    <td><p>To convert Thermistor and TDS sensor reading to digital</p></td>
-  </tr>
-  <tr>
-    <td><p>7</p></td>
-    <td><p>PN2222A Transistor</p></td>
-    <td><p>NPN BJT (40V, 1000mA)</p></td>
-    <td><p>2</p></td>
-    <td><p>Digikey (onSemi)</p></td>
-    <td><p>$0.40</p></td>
-    <td><p>$0.80</p></td>
-    <td><p>For digital motor control</p></td>
-  </tr>
-  <tr>
-    <td><p>8</p></td>
-    <td><p>1N4001 Rectifier Diode</p></td>
-    <td><p>Diffused junction: 50V 1000mA</p></td>
-    <td><p>2</p></td>
-    <td><p>Digikey (Good-Ark Semi)</p></td>
-    <td><p>$0.16</p></td>
-    <td><p>$0.32</p></td>
-    <td><p>Reverse Current Protection</p></td>
-  </tr>
-  <tr>
-    <td><p>9</p></td>
-    <td><p>10k ohm resistor</p></td>
-    <td><p>10k ohm , 1% tolerance, 0.25W</p></td>
-    <td><p>1</p></td>
-    <td><p>Digikey (Stackpole Electronics)</p></td>
-    <td><p>$0.10</p></td>
-    <td><p>$0.10</p></td>
-    <td><p>Voltage divider for Thermistor</p></td>
-  </tr>
-  <tr>
-    <td><p>10</p></td>
-    <td><p>Vishay TSOP31130 IR RCVR</p></td>
-    <td><p>30kHz carrier frequency</p></td>
-    <td><p>2</p></td>
-    <td><p>Provided by EEC172 Course</p></td>
-    <td><p>$1.41</p></td>
-    <td><p>$2.82</p></td>
-    <td><p>Decode user inputs</p></td>
-  </tr>
-  <tr>
-    <td><p>11</p></td>
-    <td><p>330 ohm resistor</p></td>
-    <td><p>330 ohm resistor, &lt;5% tolerance, 3W</p></td>
-    <td><p>2</p></td>
-    <td><p>Provided by EEC172 Course</p></td>
-    <td><p>$0.59</p></td>
-    <td><p>$1.18</p></td>
-    <td><p>Current Limit for IR Receiv er</p></td>
-  </tr>
-  <tr>
-    <td><p>12</p></td>
     <td><p>ATT-RC1534801 Remote</p></td>
     <td><p>General-purpose TV remote. IR NTC protocol</p></td>
     <td><p>1</p></td>
@@ -526,62 +402,63 @@ different plants to grow.</p>
     <td><p>Allow user inputs</p></td>
   </tr>
   <tr>
-    <td><p>13</p></td>
-    <td><p>CQRSENTDS01 TDS Sensor</p></td>
-    <td><p>Analog reading 0-2.3V. 0-1000ppm range</p></td>
+    <td><p>4</p></td>
+    <td><p>Vishay TSOP31130 IR RCVR</p></td>
+    <td><p>30kHz carrier frequency</p></td>
     <td><p>1</p></td>
-    <td><p>CQRobot</p></td>
-    <td><p>$7.99</p></td>
-    <td><p>$7.99</p></td>
-    <td><p>Measure TDS of plant solution</p></td>
-  </tr>
-  <tr>
-    <td><p>14</p></td>
-    <td><p>10uF Capacitor</p></td>
-    <td><p>Electrolytic Cap 100V</p></td>
-    <td><p>2</p></td>
     <td><p>Provided by EEC172 Course</p></td>
-    <td><p>$0.18</p></td>
-    <td><p>$0.36</p></td>
-    <td><p>DC Filtering for IR Receiv er</p></td>
+    <td><p>$1.41</p></td>
+    <td><p>$2.82</p></td>
+    <td><p>Decode user inputs</p></td>
   </tr>
   <tr>
-    <td><p>15</p></td>
-    <td><p><u>AA Battery (4ct</u>)</p></td>
-    <td><p>1.5 Volt, Non-rechargable</p></td>
+    <td><p>5</p></td>
+    <td><p>100 ohm resistor</p></td>
+    <td><p>100 ohm , 5% tolerance</p></td>
     <td><p>1</p></td>
-    <td><p>Already had, but</p>
-      <p>available on Amazon</p></td>
-    <td><p>$3.65</p></td>
-    <td><p>$3.65</p></td>
-    <td><p>Provide Power to Motors</p></td>
+    <td><p>Provided by EEC172 Course</p></td>
+    <td><p>$0.57</p></td>
+    <td><p>$5.70</p></td>
+    <td><p>Used for IR receiver circuit</p></td>
+  </tr>
+
+  <tr>
+    <td><p>6</p></td>
+    <td><p>100uF Capacitor</p></td>
+    <td><p>Electrolytic Capacitor</p></td>
+    <td><p>1</p></td>
+    <td><p>Provided by EEC172 Course</p></td>
+    <td><p>$0.11</p></td>
+    <td><p>$0.11</p></td>
+    <td><p>DC Filtering for IR Receiver</p></td>
   </tr>
   <tr>
-    <td><p>16</p></td>
-    <td><p>Battery Holder</p></td>
-    <td><p>2xAA (3 Volts Total)</p></td>
-    <td><p>2</p></td>
+    <td><p>7</p></td>
+    <td><p> AM2302 DHT22 Temperature and Humidity Sensor</p></td>
+    <td><p>Aideepen 2302 Temp Humidity Monitor</p></td>
+    <td><p>1</p></td>
     <td><p>Amazon</p></td>
-    <td><p>$2.50</p></td>
-    <td><p>$4.99</p></td>
-    <td><p>Provide Power to Motors</p></td>
+    <td><p>$10.35</p></td>
+    <td><p>$10.35</p></td>
+    <td><p>Provide temperature and humidity data</p></td>
   </tr>
+
   <tr>
     <td colspan="3">
       <p>TOTAL PARTS</p></td>
-    <td><p>25</p></td>
+    <td><p>7</p></td>
     <td colspan="2">
       <p>TOTAL</p></td>
-    <td><p>$262.37</p></td>
+    <td><p>$128.38</p></td>
     <td></td>
   </tr>
   <tr>
     <td colspan="3">
       <p>TOTAL PARTS (Excluding Provided)</p></td>
-    <td><p>14</p></td>
+    <td><p>1</p></td>
     <td colspan="2">
       <p>TOTAL (Exluding Provided)</p></td>
-    <td><p>$36.12</p></td>
+    <td><p>$10.35</p></td>
     <td></td>
   </tr>
 </tbody>
