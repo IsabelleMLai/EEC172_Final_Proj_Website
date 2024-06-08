@@ -6,18 +6,7 @@ date: 'EEC172 SQ24'
 toc-title: 'Table of Contents'
 
 abstract-title: '<h2>Description</h2>'
-abstract: 'Hydroponics is a technique where plants are grown in a nutrient-rich
-solution. This soil- free technique has been gaining traction recently
-due to its ability to optimize resource utilization. However, since
-plants are highly sensitive to changes in TDS, hydroponic setups require
-continuous TDS monitoring and adjustment. NutriSense, our device, allows
-hobbyists to achieve ideal hydroponics results on a small scale. It
-continuously monitors TDS and temperature, allowing the user to remotely
-read the status over AWS IoT cloud. The user can remotely enter upper
-and lower thresholds for TDS, and the device will automatically add
-nutrient solution or water to keep the TDS bounded by the thresholds.
-The device can also be configured to send notifications over SNS when
-the TDS value goes outside thresholds.
+abstract: 'My descirptioin
 <br/><br/>
 Our source code can be found 
 <!-- replace this link -->
@@ -50,16 +39,8 @@ asdfasdfasd
 
 # Market Survey
 
-There are two types of similar product on the market. The first one is
-products from AeroGarden. Their products allow users to grow plants in
-nutrient solutions in a limited amount of usually 5 to 10. Compared with
-this product, our product provides an automated system for nutrient
-control that ensures the plant always has the correct amount of
-nutrients needed to avoid excess or insufficient nutrients. The other
-product is an expensive commercial system for horticulture aiming for a
-large scale of growth. Compared with this one, our product has the
-advantage of being cheap and small-scale which is more suitable for
-individual hobbyists to explore hydroponics.
+more description
+
 
 <div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;">
   <div style='display: inline-block; vertical-align: top;'>
